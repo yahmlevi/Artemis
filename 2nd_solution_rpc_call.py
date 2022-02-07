@@ -1,6 +1,6 @@
 # install web3 package: pip install web3
 from web3 import Web3
-print("yahm")
+
 # we can call our host by it's docker container name, which we give to it in docker-compose.yaml
 host_name = "http://ganache"
 port = "8545"
