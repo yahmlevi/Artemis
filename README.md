@@ -1,5 +1,6 @@
 TASK - get balance the of an account using JSON-RPC API, denominated in Ether
 
+solution walkthrough:
 
 1. clone repo
 2. run 'docker-compose up' when you are in the repo directory
