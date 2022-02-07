@@ -13,7 +13,8 @@ services:
     image: python:3.9
     volumes:
       # - [FULL_PATH_TO_WORKSPACE]:/web3_academy
-      - /c/projects/House_of_Wisdom/solidity/web3_academy_test:/web3_academy
+      # - /c/projects/House_of_Wisdom/solidity/web3_academy_test:/web3_academy
+      - ${PWD}:/web3_academy
     working_dir: /web3_academy
     command:  bash -c "
           apt-get update &&

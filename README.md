@@ -1,10 +1,10 @@
 TASK - get balance the of an account using JSON-RPC API, denominated in Ether
 
 
-- spin-up a local ganache blockchain & workspace using provided docker-compose.yaml file with command 'docker-compose up', when current work dir is where docker-compose file and other relevent scripts (we can also use a personal Ethereum node or a node-provider service like infura.io for a blockchain endpoint).
-
-1st solution:
-- use any of the methods available in https://eth.wiki/json-rpc/API (specifically eth_getBalance method) using Curl.
-
-2nd sulotion:
-- use Python's Web3 library which leverages JSON-RPC (https://web3py.readthedocs.io/en/stable/web3.eth.html). make sure to install the Web3 package on your environment.
+1. clone repo
+2. run 'docker-compose up' when you are in the repo directory
+3. get an address of an account using 'docker logs ganache' on another terminal. the account has 100 fake Ether in it 
+4. in 1st_solution_curl.sh and 2nd_solution_rpc_call.py, replace the address with the one you got in step 3
+5. enter into workspace container with 'docker exec -it python-workspace bash'
+6A. to run the Curl script, run './1st_solution_curl.sh' from /web3_academy
+6B. to run the Python script, run 'python 2nd_solution_rpc_call.py' from /web3_academy
