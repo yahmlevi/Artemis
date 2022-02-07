@@ -4,7 +4,7 @@ solution walkthrough:
 
 1. clone repo
 
-2. run 'docker-compose up' when you are in the repo directory
+2. run 'docker-compose up -d' when you are in the repo directory
 
 3. get an address of an account using 'docker logs ganache' on another terminal. the account has 100 fake Ether in it 
 
@@ -15,3 +15,5 @@ solution walkthrough:
 6. to run the Curl script, run './1st_solution_curl.sh' from /web3_academy
 
 7. to run the Python script, run 'python 2nd_solution_rpc_call.py' from /web3_academy
+
+8. run 'docker-compose down' to stop the containers

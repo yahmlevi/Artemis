@@ -6,7 +6,7 @@ host_name="http://ganache"
 port="8545"
 
 # address of account to get balance of.  Change this to your own address 
-address="0x005cED1Dd02aFAee8b2785a07c21487a293de2e5"
+address="0x0B28A30f74419707B35e627ee689b99C1B0a64d9"
 
 # get response from node -> extract hexadecimal value of balance in wei -> convert value to decimal
 balance_in_wei=$(curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["'$address'", "latest"],"id":1}' $host_name:$port | jq -r .result | xargs printf "%f")
