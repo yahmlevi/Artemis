@@ -8,8 +8,8 @@ services:
     ports:
       - 8545:8545
 
-  python-workspace:
-    container_name: python-workspace
+  python-brownie-workspace:
+    container_name: python-brownie-workspace
     image: python:3.9
     volumes:
       - ${PWD}:/web3_academy
@@ -18,5 +18,5 @@ services:
           apt-get update &&
           apt-get install -y bc jq &&
           pip install web3 &&
+          pip install eth-brownie &&
           tail -F anything"
-    
