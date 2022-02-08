@@ -4,7 +4,7 @@ Solution Walkthrough:
 
 1. clone repo.
 
-2. run 'docker-compose up -d' when you are in the repo directory.
+2. run 'docker-compose up -d' when in repo dir.
 
 3. enter into workspace container with 'docker exec -it python-brownie-workspace bash'.
 
