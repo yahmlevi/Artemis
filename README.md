@@ -1,3 +1,5 @@
+https://docs.google.com/document/d/1CW7m7N3sfp3MwwTgkuDmRd2BLqK4hpKjG1Km9Xo52hY/edit
+
 TASK - get balance of an account using JSON-RPC API, denominated in Ether.
 
 Solution Walkthrough:
