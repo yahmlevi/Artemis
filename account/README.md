@@ -1,8 +1,4 @@
-py solution - https://hackernoon.com/how-to-build-a-minimalistic-ethereum-wallet-in-python-part-1-rr4j32dp
-sh solution - https://kobl.one/blog/create-full-ethereum-keypair-and-address/?ref=hackernoon.com
-
-
-general solution:
+general solution - account creation:
 
 1. Generate a private key (just a random number from a solid source of entropy)
 
@@ -19,7 +15,10 @@ Elliplic Curve Cryptography (ECC) relies on:
 In Ethereum, the chosen parameters are those of the 'secp256k1' standard curve and are given here (https://www.secg.org/sec2-v2.pdf?ref=hackernoon.com).
 
 
-solution walkthrough:
+Notes:
+    - 'keccak-256sum' executable is for hashing with Bash 
+
+Solution Walkthrough:
 
 1. clone repo
 
@@ -27,8 +26,22 @@ solution walkthrough:
 
 3. enter into workspace container with 'docker exec -it python-workspace bash'
 
-    Python & Web3 solution:
-        - 
+4. creating a new account:
 
-    Bash & OpenSSL solution:
-        -
+    4.1. Python & Web3 solution:
+            - 'cd' into 'python-solution'
+            - run 'python account_creation.py' 
+
+    4.2. Bash & OpenSSL solution:
+            - 'cd' into 'bash-solution'
+            - run 'bash account_creation.sh'
+
+5. verify if address is EOA/contract & get it's full state
+
+    5.1. Python & Web3 solution:
+            - 'cd' into 'python-solution'
+            - run 'python get_info.py'
+
+    5.2. Bash & OpenSSL solution:
+            - 'cd' into 'bash-solution'
+            - run 'bash get_info.sh'

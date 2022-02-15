@@ -38,6 +38,8 @@ host_name = "https://rinkeby.infura.io/v3/" + project_id
 # address = "0x4dABe5fd289B0Dd4eC3AdF46A1B394aa09c7a459"
 
 # address of my personal account (test account) - nonce should be 13
+# address = "0x864e4b0c28dF7E2f317FF339CebDB5224F47220e"
+
 address = "0x864e4b0c28dF7E2f317FF339CebDB5224F47220e"
 
 # set connection to node
