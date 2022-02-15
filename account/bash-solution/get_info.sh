@@ -26,7 +26,7 @@ get_full_state () {
 }
 
 
-project_id="ff43de2d16d549f6936bf4f63d7a89ed"
+project_id="YOUR-PROJECT-ID"
 host_name="https://rinkeby.infura.io/v3/$project_id"
 
 

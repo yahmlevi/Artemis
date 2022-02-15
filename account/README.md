@@ -48,3 +48,4 @@ Solution Walkthrough:
 Notes:
     - 'keccak-256sum' executable is for hashing with Bash
     - notice different address supplyed in Python & Bash get_info solutions
+    - add your Infura project ID to scripts

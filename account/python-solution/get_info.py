@@ -31,7 +31,7 @@ def get_full_state(_address):
 
 
 # connect to the Rinkeby network via Infura
-project_id = "ff43de2d16d549f6936bf4f63d7a89ed"
+project_id = "YOUR-PROJECT-ID"
 host_name = "https://rinkeby.infura.io/v3/" + project_id
 
 # address of a verified contract on rinkeby https://rinkeby.etherscan.io/address/0x4dABe5fd289B0Dd4eC3AdF46A1B394aa09c7a459#code
@@ -43,7 +43,7 @@ host_name = "https://rinkeby.infura.io/v3/" + project_id
 address = "0x864e4b0c28dF7E2f317FF339CebDB5224F47220e"
 
 # set connection to node
-w3 = Web3(Web3.HTTPProvider('https://rinkeby.infura.io/v3/ff43de2d16d549f6936bf4f63d7a89ed'))
+w3 = Web3(Web3.HTTPProvider(host_name))
 
 print("Is address a contract? ", is_contract(address))
 
