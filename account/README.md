@@ -38,10 +38,12 @@ Solution Walkthrough:
 
     5.1. Python & Web3 solution:
             - 'cd' into 'python-solution'
+            - add your Infura project id to 'get_info.py'
             - run 'python get_info.py'
 
     5.2. Bash & OpenSSL solution:
             - 'cd' into 'bash-solution'
+            - add your Infura project id to 'get_info.sh'
             - run 'bash get_info.sh'
 
 
