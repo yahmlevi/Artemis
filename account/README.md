@@ -1,5 +1,6 @@
 general solution - account creation:
 
+
 1. Generate a private key (just a random number from a solid source of entropy)
 
 2. Use Elliptical Curve cryptography to generate a public key from the private key (Trapdoor function (https://en.wikipedia.org/wiki/Trapdoor_function))
@@ -14,9 +15,6 @@ Elliplic Curve Cryptography (ECC) relies on:
 
 In Ethereum, the chosen parameters are those of the 'secp256k1' standard curve and are given here (https://www.secg.org/sec2-v2.pdf?ref=hackernoon.com).
 
-
-Notes:
-    - 'keccak-256sum' executable is for hashing with Bash 
 
 Solution Walkthrough:
 
@@ -45,3 +43,8 @@ Solution Walkthrough:
     5.2. Bash & OpenSSL solution:
             - 'cd' into 'bash-solution'
             - run 'bash get_info.sh'
+
+
+Notes:
+    - 'keccak-256sum' executable is for hashing with Bash
+    - notice different address supplyed in Python & Bash get_info solutions
