@@ -6,46 +6,32 @@ def is_contract(_address):
     # hashed bytecode of a non-contract account (EOA - externally owned account)
     eoa_hash = '0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470'
     
-    # check if hashed bytecode of the address is equal to the hashed bytecode of a non-contract account
+    # check if hashed bytecode of the address is equal to the hashed bytecode of a known non-contract account
     if w3.keccak(hexstr = w3.eth.get_code(_address).hex()).hex() == eoa_hash:
         return False
     else:
         return True
 
-def get_full_state(_address):
-    # stateRoot
 
-    # get nonce
-    nonce = w3.eth.get_transaction_count(_address)
+# set Infura details for Goerli network
+project_id = "ff43de2d16d549f6936bf4f63d7a89ed"
+host_endpoint = "https://goerli.infura.io/v3/" + project_id
 
-    # get balance of account in Wei
-    balance_in_wei = w3.eth.get_balance(address)
+# address of a verified contract on Goerli https://goerli.etherscan.io/address/0xE7a0eDfFf12b8FEBbD0f94B0936C2B1F43b61f84#code
+# address = "0xE7a0eDfFf12b8FEBbD0f94B0936C2B1F43b61f84"
 
-    # convert balance from Wei to Ether
-    balance_in_ether = Web3.fromWei(balance_in_wei, 'ether')
-
-    # get hash of contracrs's ByteCode (EOA will have empty bytecode)
-    code_hash = w3.keccak(hexstr = w3.eth.get_code(_address).hex()).hex()
-    
-    return nonce, balance_in_ether, code_hash
-
-
-# connect to the Rinkeby network via Infura
-project_id = "YOUR-PROJECT-ID"
-host_name = "https://rinkeby.infura.io/v3/" + project_id
-
-# address of a verified contract on rinkeby https://rinkeby.etherscan.io/address/0x4dABe5fd289B0Dd4eC3AdF46A1B394aa09c7a459#code
-# address = "0x4dABe5fd289B0Dd4eC3AdF46A1B394aa09c7a459"
-
-# address of my personal account (test account) - nonce should be 13
+# address of my personal test account - nonce should be 1
 # address = "0x864e4b0c28dF7E2f317FF339CebDB5224F47220e"
 
-address = "0x864e4b0c28dF7E2f317FF339CebDB5224F47220e"
+# set target address
+address = "0xE7a0eDfFf12b8FEBbD0f94B0936C2B1F43b61f84"
 
-# set connection to node
-w3 = Web3(Web3.HTTPProvider(host_name))
+# set connection to Goerli node via Infura
+w3 = Web3(Web3.HTTPProvider(host_endpoint))
 
-print("Is address a contract? ", is_contract(address))
+# execute is_contract function to check if the address is a contract or an EOA
+print("\n\nIs address a contract? ", is_contract(address))
 
-nonce, balance_in_ether, code_hash = get_full_state(address)
-print("nonce: {}\nbalance in Ether: {}\nhashed ByteCode: {}" .format(nonce, balance_in_ether, code_hash))
+# execute Python's Web3 get_proof function to get the current full state of the contract
+full_state = w3.eth.get_proof(address, [0], "latest")
+print("\n\nfull state: ", full_state)

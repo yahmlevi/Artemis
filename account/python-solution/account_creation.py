@@ -2,7 +2,8 @@ from tinyec.ec import SubGroup, Curve
 from Crypto.Random.random import randint
 from web3 import Web3
 
-# pre-defined parameters for the elliptic curve as detailed here (https://www.secg.org/sec2-v2.pdf?ref=hackernoon.com)
+# known parameters for the elliptic curve as detailed here (https://www.secg.org/sec2-v2.pdf?ref=hackernoon.com)
+# good Primer on ECC - https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/
 h = 1
 p = int("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F", 16)
 n = int("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141", 16)
@@ -21,12 +22,14 @@ print("random private key: " + str(private_key))
 # generate a public key using the private key and the elliptic curve
 public_key = private_key * curve.g
 public_key_hex = Web3.toHex(public_key.x)[2:] + Web3.toHex(public_key.y)[2:]
+print("public key (derived from private key): " + str(public_key_hex))
 
-# generate a valid Ethereum address using the public key and Keccak-256 hashing algorithm
+# hash the public key using the Keccak-256 hashing algorithm, and convert the result to hexadecimal
 address = Web3.keccak(hexstr = public_key_hex).hex()
+# add '0x' prefix to the address, and take only the first 20 bytes
 address = "0x" + address[-40:]
 
-# using a checksum to capitalize the address and protect against typos
+# use a checksum to capitalize the address and protect against typos
 address = Web3.toChecksumAddress(address)
 print("public address: " + str(address))
 
