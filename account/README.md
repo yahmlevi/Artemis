@@ -1,3 +1,5 @@
+https://www.notion.so/Accounts-f2a5410ce64a4225a606b2d7b08d8c4c
+
 solution:
 
     account creation:
@@ -54,7 +56,7 @@ Notes:
 
 
 
-Elliplic Curve Cryptography (ECC) relies on:
+Elliptic Curve Cryptography (ECC) relies on:
     
     1. some mathematical field (parametrized by h, p and n)
     
