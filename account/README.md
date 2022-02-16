@@ -14,44 +14,47 @@ solution:
 
 Solution Walkthrough:
 
-1. clone repo
+    1. clone repo
 
-2. run 'docker-compose up -d' when in repo dir
+    2. run 'docker-compose up -d' when in repo dir
 
-3. enter into workspace container with 'docker exec -it python-workspace bash'
+    3. enter into workspace container with 'docker exec -it python-workspace bash'
 
-4. creating a new account:
+    4. creating a new account:
 
-    4.1. Python & Web3 solution:
-            - 'cd' into 'python-solution'
-            - run 'python account_creation.py' 
+        4.1. Python & Web3 solution:
+                - 'cd' into 'python-solution'
+                - run 'python account_creation.py' 
 
-    4.2. Bash & OpenSSL solution:
-            - 'cd' into 'bash-solution'
-            - run './account_creation.sh'
+        4.2. Bash & OpenSSL solution:
+                - 'cd' into 'bash-solution'
+                - run './account_creation.sh'
 
-5. verify if address is EOA/contract & get it's full state
+    5. verify if address is EOA/contract & get it's full state
 
-    5.1. Python & Web3 solution:
-            - 'cd' into 'python-solution'
-            - add your Infura project id to 'get_info.py'
-            - run 'python get_info.py'
+        5.1. Python & Web3 solution:
+                - 'cd' into 'python-solution'
+                - add your Infura project id to 'get_info.py'
+                - run 'python get_info.py'
 
-    5.2. Bash & OpenSSL solution:
-            - 'cd' into 'bash-solution'
-            - add your Infura project id to 'get_info.sh'
-            - run './get_info.sh'
+        5.2. Bash & OpenSSL solution:
+                - 'cd' into 'bash-solution'
+                - add your Infura project id to 'get_info.sh'
+                - run './get_info.sh'
+
 
 
 Notes:
-    - 'keccak-256sum' executable is for hashing with Bash
-    - notice different address in Python & Bash get_info solutions
-    - add your own Infura project ID to scripts
+    1. 'keccak-256sum' executable is for hashing with Bash
+    2. notice different address in Python & Bash get_info solutions
+    3. add your own Infura project ID to scripts
+
 
 
 Elliplic Curve Cryptography (ECC) relies on:
-    - some mathematical field (parametrized by h, p and n)
-    - some elliptic curve (parametrized by x and y)
-    - some point on the curve (parametrized by g = (x,y)) 
+    1. some mathematical field (parametrized by h, p and n)
+    2. some elliptic curve (parametrized by x and y)
+    3. some point on the curve (parametrized by g = (x,y)) 
+
 
 In Ethereum, the chosen parameters are those of the 'secp256k1' standard curve and are given here (https://www.secg.org/sec2-v2.pdf?ref=hackernoon.com).
