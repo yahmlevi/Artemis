@@ -61,6 +61,5 @@ Elliplic Curve Cryptography (ECC) relies on:
     2. some elliptic curve (parametrized by x and y)
     
     3. some point on the curve (parametrized by g = (x,y)) 
-
-
-In Ethereum, the chosen parameters are those of the 'secp256k1' standard curve and are given here (https://www.secg.org/sec2-v2.pdf?ref=hackernoon.com).
+    
+    *** In Ethereum, the chosen parameters are those of the 'secp256k1' standard curve and are given here (https://www.secg.org/sec2-v2.pdf?ref=hackernoon.com).
