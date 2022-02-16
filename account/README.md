@@ -45,15 +45,21 @@ Solution Walkthrough:
 
 
 Notes:
+
     1. 'keccak-256sum' executable is for hashing with Bash
+    
     2. notice different address in Python & Bash get_info solutions
+    
     3. add your own Infura project ID to scripts
 
 
 
 Elliplic Curve Cryptography (ECC) relies on:
+    
     1. some mathematical field (parametrized by h, p and n)
+    
     2. some elliptic curve (parametrized by x and y)
+    
     3. some point on the curve (parametrized by g = (x,y)) 
 
 
