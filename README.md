@@ -11,3 +11,5 @@ L2 Scaling - https://www.notion.so/L2-Scaling-b99d2fe3bc15417aad489c5f7c5f3e10
 Token Models (part of Tokenomics) - https://www.notion.so/Token-Models-43735831c051464eafd4a329a6ffce96
 
 Token Launches (part of Tokenomics) - https://www.notion.so/Token-Launches-7947031b6f5240ecbf8ca7a75f748c61 
+
+Essay task for POC program - https://www.notion.so/What-world-do-you-want-to-help-create-given-the-abilities-you-desire-to-learn-within-the-Artemis-pro-a378cc5e3b7f4639a81cce0dbe2e58fc
