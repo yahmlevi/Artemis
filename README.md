@@ -13,3 +13,9 @@ Token Models (part of Tokenomics) - https://www.notion.so/Token-Models-43735831c
 Token Launches (part of Tokenomics) - https://www.notion.so/Token-Launches-7947031b6f5240ecbf8ca7a75f748c61 
 
 Essay task for POC program - https://www.notion.so/What-world-do-you-want-to-help-create-given-the-abilities-you-desire-to-learn-within-the-Artemis-pro-a378cc5e3b7f4639a81cce0dbe2e58fc
+
+Dopex - Content Writer Assesment - https://www.notion.so/Content-Writer-Assessment-Dopex-66766e58c60e4f4186309cae763cedb7
+
+Tasks for Artemis KB - https://www.notion.so/Tasks-793cff264ab841c29b5016afcb44cec0
+
+Artemis POC as a student - https://www.notion.so/Artemis-POC-As-a-Student-3b3a029c95b74e5580fb4cd5e3f759de
