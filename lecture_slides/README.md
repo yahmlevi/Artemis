@@ -1,0 +1,1 @@
+running on Windows is problematic. run on linux tutorial https://www.rosehosting.com/blog/how-to-install-reveal-js-on-ubuntu-20-04/  -  linux machine (YahmTests - 192.168.114.177)
