@@ -1,2 +1,1 @@
-# tasks
-Solutions for tasks
+## Solutions for tasks
