@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 JSON-RPC - https://docs.google.com/document/d/1CW7m7N3sfp3MwwTgkuDmRd2BLqK4hpKjG1Km9Xo52hY/edit
 
 Accounts - https://www.notion.so/Accounts-f2a5410ce64a4225a606b2d7b08d8c4c
@@ -19,3 +20,6 @@ Dopex - Content Writer Assesment - https://www.notion.so/Content-Writer-Assessme
 Tasks for Artemis KB - https://www.notion.so/Tasks-793cff264ab841c29b5016afcb44cec0
 
 Artemis POC as a student - https://www.notion.so/Artemis-POC-As-a-Student-3b3a029c95b74e5580fb4cd5e3f759de
+=======
+## Solutions for tasks
+>>>>>>> ee8795dfea1e43c5f88d8335abfa88a88d028f25
