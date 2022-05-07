@@ -12,4 +12,12 @@ contract Gas {
                 break;
         }
     }
+
+    function callFoo(address _contract) external {
+        (bool successful, bytes memory data) = _contract.call
+            {value: 420, gas: 5000}
+            (abi.encodeWithSignature("foo(string,uint256)", "call foo", 123));
+        
+        require(successful, "Call Failed!")
+    }
 }

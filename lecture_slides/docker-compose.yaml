@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - "./reveal.conf:/etc/nginx/conf.d/default.conf"
+
+  reveal:
+    image: node:14
+    container_name: reveal
+    restart: unless-stopped
+    ports:
+      - 8001:8001
+    # expose:
+    #   - 8001
+    volumes:
+      - "./reveal.js:/reveal.js"
+    command: bash -c "tail -F anything"
