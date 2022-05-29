@@ -13,3 +13,6 @@ git checkout <branchName>
 # change name + email
 git config --global user.name "johnnyonline"
 git config --global user.email johnnyonline.eth@gmail.com
+
+git config --global user.name "yahml"
+git config --global user.email yahml@ctera.com
