@@ -1,0 +1,33 @@
+name: Build Backend
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    # runs-on: ubuntu-latest
+    runs:
+      using: 'docker'
+      image: 'Dockerfile'
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Compile
+      run: |
+        npx hardhat compile
+    
+    - name: Test
+      run: |
+        npx hardhat test
+    
+    - name: Run
+      run: |
+        npx hardhat run deployments/deployToken.js
