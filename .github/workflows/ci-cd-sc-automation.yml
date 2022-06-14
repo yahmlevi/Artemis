@@ -28,15 +28,3 @@ jobs:
         image: hardhat:latest
         
         run: echo "hello world"
-
-    # - name: Compile
-    #   run: |
-    #     npx hardhat compile
-    
-    # - name: Test
-    #   run: |
-    #     npx hardhat test
-    
-    # - name: Run
-    #   run: |
-    #     npx hardhat run deployments/deployToken.js
