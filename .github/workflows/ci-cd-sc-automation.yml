@@ -29,8 +29,6 @@ jobs:
               
           - name: Test
             run: npx hardhat test
-          - name: print
-            run: ls -l
-
+          
           - name: Run
             run: npx hardhat run deployments/deployToken.js
