@@ -18,18 +18,14 @@ jobs:
           - name: Check out repo
             uses: actions/checkout@v3
 
-          - name: Build
-            run: echo "yahm"
-
-
-    # - name: Compile
-    #   run: |
-    #     npx hardhat compile
-    
-    # - name: Test
-    #   run: |
-    #     npx hardhat test
-    
-    # - name: Run
-    #   run: |
-    #     npx hardhat run deployments/deployToken.js
+          - name: Install Dependencies
+            run: npm install --save-dev @nomiclabs/hardhat-etherscan @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai dotenv
+          
+          - name: Compile
+            run: npx hardhat compile
+              
+          - name: Test
+            run: npx hardhat test
+          
+          - name: Run
+            run: npx hardhat run sc_devops/deployments/deployToken.js
